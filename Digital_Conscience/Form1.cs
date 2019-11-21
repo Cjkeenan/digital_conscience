@@ -31,6 +31,11 @@ namespace Digital_Conscience
             {
                 TabooDialog();
             }
+            else
+            {
+                var messageStatusDlg = MessageBox.Show("Message Sent Succesfully", "Message Status", MessageBoxButtons.OK);
+                this.Close();
+            }
             
         }
 
