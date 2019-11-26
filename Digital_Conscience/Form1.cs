@@ -14,6 +14,7 @@ namespace Digital_Conscience
 {
     public partial class InitialWindow : Form
     {
+        string path = Directory.GetCurrentDirectory().Replace(@"\bin\Debug\netcoreapp3.0", "");
         public InitialWindow()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace Digital_Conscience
 
         public void addPictures()
         {
-            facebookLogo.BackgroundImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\images\facebook-logo.jpg");
+            facebookLogo.BackgroundImage = Image.FromFile(path + @"\images\facebook-logo.jpg");
         }
 
         private void clearButton_Click(object sender, EventArgs e)
@@ -66,7 +67,7 @@ namespace Digital_Conscience
             var tabooDlg = MessageBox.Show("Your message contained words that are common with those that are considered hostile or hateful.\nAre you sure you want to post this?", "Warning Message", MessageBoxButtons.YesNo);
             if (tabooDlg == System.Windows.Forms.DialogResult.Yes)
             {
-                var messageStatusDlg = MessageBox.Show("Message Sent Succesfully","Message Status", MessageBoxButtons.OK);
+                var messageStatusDlg = MessageBox.Show("Succesfully Posted!","Message Status", MessageBoxButtons.OK);
                 this.Close();
             }
         }
@@ -74,7 +75,7 @@ namespace Digital_Conscience
         private List<string> PullTabooWords()
         {
             List<string> tabooWords = new List<string>();
-            string file = System.IO.File.ReadAllText(Directory.GetCurrentDirectory() + @"\badWords.txt");
+            string file = System.IO.File.ReadAllText(path + @"\badWords.txt");
             string[] split_file = file.Split("\r\n");
             foreach (string s in split_file)
             {
