@@ -1,0 +1,22 @@
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.exe
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.deps.json
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.runtimeconfig.json
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.runtimeconfig.dev.json
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.dll
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.pdb
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.csprojAssemblyReference.cache
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.AssemblyInfoInputs.cache
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.AssemblyInfo.cs
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.dll
+F:\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.pdb
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.exe
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.deps.json
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.runtimeconfig.json
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.runtimeconfig.dev.json
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.dll
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\bin\Debug\netcoreapp3.0\Digital_Conscience.pdb
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.csprojAssemblyReference.cache
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.AssemblyInfoInputs.cache
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.AssemblyInfo.cs
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.dll
+C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\obj\Debug\netcoreapp3.0\Digital_Conscience.pdb
