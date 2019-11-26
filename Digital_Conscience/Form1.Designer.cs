@@ -35,6 +35,7 @@
             this.facebookLogo = new System.Windows.Forms.PictureBox();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
+            this.createPostTitle = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebookLogo)).BeginInit();
             // 
@@ -66,10 +67,10 @@
             this.messageText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.messageText.Location = new System.Drawing.Point(22, 50);
+            this.messageText.Location = new System.Drawing.Point(22, 88);
             this.messageText.Name = "messageText";
             this.messageText.ShowSelectionMargin = true;
-            this.messageText.Size = new System.Drawing.Size(455, 162);
+            this.messageText.Size = new System.Drawing.Size(455, 124);
             this.messageText.TabIndex = 3;
             this.messageText.Text = "What\'s on your mind?";
             this.messageText.UseWaitCursor = true;
@@ -118,9 +119,22 @@
             this.searchButton.Text = "🔍";
             this.searchButton.UseVisualStyleBackColor = false;
             // 
+            // createPostTitle
+            // 
+            this.createPostTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.createPostTitle.BackColor = System.Drawing.SystemColors.Control;
+            this.createPostTitle.Location = new System.Drawing.Point(22, 62);
+            this.createPostTitle.Name = "createPostTitle";
+            this.createPostTitle.Size = new System.Drawing.Size(455, 27);
+            this.createPostTitle.TabIndex = 8;
+            this.createPostTitle.Text = "Create Post";
+            // 
             // InitialWindow
             // 
             this.ClientSize = new System.Drawing.Size(499, 269);
+            this.Controls.Add(this.createPostTitle);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.facebookLogo);
@@ -143,6 +157,7 @@
         private System.Windows.Forms.PictureBox facebookLogo;
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.TextBox createPostTitle;
     }
 }
 
