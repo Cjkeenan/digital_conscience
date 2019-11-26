@@ -33,15 +33,17 @@
             this.messageText = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.facebookLogo = new System.Windows.Forms.PictureBox();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facebookLogo)).BeginInit();
             // 
             // clearButton
             // 
             this.clearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.clearButton.Location = new System.Drawing.Point(37, 231);
+            this.clearButton.Location = new System.Drawing.Point(50, 222);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 25);
+            this.clearButton.Size = new System.Drawing.Size(75, 31);
             this.clearButton.TabIndex = 0;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
@@ -64,10 +66,10 @@
             this.messageText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.messageText.Location = new System.Drawing.Point(22, 93);
+            this.messageText.Location = new System.Drawing.Point(22, 50);
             this.messageText.Name = "messageText";
             this.messageText.ShowSelectionMargin = true;
-            this.messageText.Size = new System.Drawing.Size(455, 119);
+            this.messageText.Size = new System.Drawing.Size(455, 162);
             this.messageText.TabIndex = 3;
             this.messageText.Text = "What\'s on your mind?";
             this.messageText.UseWaitCursor = true;
@@ -85,18 +87,42 @@
             // 
             // facebookLogo
             // 
-            this.facebookLogo.BackColor = System.Drawing.SystemColors.GrayText;
-            this.facebookLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.facebookLogo.ImageLocation = "Directory.GetCurrentDirectory() + @\"\\images\\facebook-logo.png\"";
-            this.facebookLogo.Location = new System.Drawing.Point(25, 4);
+            this.facebookLogo.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.facebookLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.facebookLogo.ImageLocation = "";
+            this.facebookLogo.Location = new System.Drawing.Point(21, 8);
             this.facebookLogo.Name = "facebookLogo";
-            this.facebookLogo.Size = new System.Drawing.Size(36, 37);
+            this.facebookLogo.Size = new System.Drawing.Size(52, 27);
             this.facebookLogo.TabIndex = 5;
             this.facebookLogo.TabStop = false;
+            // 
+            // searchBox
+            // 
+            this.searchBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchBox.Location = new System.Drawing.Point(80, 8);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(362, 27);
+            this.searchBox.TabIndex = 6;
+            this.searchBox.Text = "Search";
+            // 
+            // searchButton
+            // 
+            this.searchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.searchButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.searchButton.Location = new System.Drawing.Point(441, 8);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(46, 27);
+            this.searchButton.TabIndex = 7;
+            this.searchButton.Text = "🔍";
+            this.searchButton.UseVisualStyleBackColor = false;
             // 
             // InitialWindow
             // 
             this.ClientSize = new System.Drawing.Size(499, 269);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.facebookLogo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.messageText);
@@ -115,6 +141,8 @@
         private System.Windows.Forms.RichTextBox messageText;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox facebookLogo;
+        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button searchButton;
     }
 }
 

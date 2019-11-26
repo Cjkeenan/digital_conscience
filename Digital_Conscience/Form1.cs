@@ -22,15 +22,12 @@ namespace Digital_Conscience
 
         public void addPictures()
         {
-            //string path = @"C:\Users\Colin Keenan\OneDrive\GitHub\Cjkeenan\Digital_Conscience\Digital_Conscience\images\facebook_logo.png";
-            Image logo = Image.FromFile(Directory.GetCurrentDirectory() + @"\images\facebook-logo.png");
-            this.facebookLogo.Image = logo;
+            facebookLogo.BackgroundImage = Image.FromFile(Directory.GetCurrentDirectory() + @"\images\facebook-logo.jpg");
         }
 
         private void clearButton_Click(object sender, EventArgs e)
         {
             messageText.Clear();
-            addPictures();
         }
 
         private void sendButton_Click(object sender, EventArgs e)
@@ -42,7 +39,7 @@ namespace Digital_Conscience
             }
             else
             {
-                var messageStatusDlg = MessageBox.Show("Message Sent Succesfully", "Message Status", MessageBoxButtons.OK);
+                var messageStatusDlg = MessageBox.Show("Successfully Posted!", "Message Status", MessageBoxButtons.OK);
                 this.Close();
             }
             
@@ -53,13 +50,14 @@ namespace Digital_Conscience
             List<string> tabooWords = PullTabooWords();
             CultureInfo culture = new CultureInfo("en-US", false);
 
-            bool flag = false;         
+            bool flag = false;
 
             foreach(string phrase in tabooWords)
             {
                 if (culture.CompareInfo.IndexOf(text, phrase, CompareOptions.IgnoreCase) >= 0)
                     flag = true;
             }
+
             return flag;
         }
 
@@ -77,7 +75,7 @@ namespace Digital_Conscience
         {
             List<string> tabooWords = new List<string>();
             string file = System.IO.File.ReadAllText(Directory.GetCurrentDirectory() + @"\badWords.txt");
-            string[] split_file = file.Split('\n');
+            string[] split_file = file.Split("\r\n");
             foreach (string s in split_file)
             {
                 tabooWords.Add(s);
