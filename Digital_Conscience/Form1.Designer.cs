@@ -31,11 +31,15 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.sendButton = new System.Windows.Forms.Button();
             this.messageText = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.facebookLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facebookLogo)).BeginInit();
             // 
             // clearButton
             // 
             this.clearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.clearButton.Location = new System.Drawing.Point(37, 111);
+            this.clearButton.Location = new System.Drawing.Point(37, 231);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 25);
             this.clearButton.TabIndex = 0;
@@ -46,7 +50,7 @@
             // sendButton
             // 
             this.sendButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.sendButton.Location = new System.Drawing.Point(216, 98);
+            this.sendButton.Location = new System.Drawing.Point(216, 218);
             this.sendButton.Name = "sendButton";
             this.sendButton.Size = new System.Drawing.Size(251, 38);
             this.sendButton.TabIndex = 1;
@@ -60,21 +64,47 @@
             this.messageText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.messageText.Location = new System.Drawing.Point(22, 15);
+            this.messageText.Location = new System.Drawing.Point(22, 93);
             this.messageText.Name = "messageText";
             this.messageText.ShowSelectionMargin = true;
-            this.messageText.Size = new System.Drawing.Size(455, 77);
+            this.messageText.Size = new System.Drawing.Size(455, 119);
             this.messageText.TabIndex = 3;
-            this.messageText.Text = "Enter your message here...";
+            this.messageText.Text = "What\'s on your mind?";
             this.messageText.UseWaitCursor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(505, 48);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // facebookLogo
+            // 
+            this.facebookLogo.BackColor = System.Drawing.SystemColors.GrayText;
+            this.facebookLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.facebookLogo.ImageLocation = "Directory.GetCurrentDirectory() + @\"\\images\\facebook-logo.png\"";
+            this.facebookLogo.Location = new System.Drawing.Point(25, 4);
+            this.facebookLogo.Name = "facebookLogo";
+            this.facebookLogo.Size = new System.Drawing.Size(36, 37);
+            this.facebookLogo.TabIndex = 5;
+            this.facebookLogo.TabStop = false;
             // 
             // InitialWindow
             // 
-            this.ClientSize = new System.Drawing.Size(499, 149);
+            this.ClientSize = new System.Drawing.Size(499, 269);
+            this.Controls.Add(this.facebookLogo);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.messageText);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.clearButton);
             this.Name = "InitialWindow";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facebookLogo)).EndInit();
 
         }
 
@@ -83,6 +113,8 @@
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.RichTextBox messageText;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox facebookLogo;
     }
 }
 
