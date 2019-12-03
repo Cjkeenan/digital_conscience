@@ -41,9 +41,14 @@ namespace Digital_Conscience
             else
             {
                 var messageStatusDlg = MessageBox.Show("Successfully Posted!", "Message Status", MessageBoxButtons.OK);
-                this.Close();
+                addToFeed(messageText.Text);
             }
-            
+        }
+
+        private void addToFeed(string text)
+        {
+            string timestamp = System.DateTime.Now.ToString("MM-dd-yyyy HH:mm  -  ");
+            postFeed.AppendText(timestamp + "User: " + text + "\n");
         }
 
         private bool ScanText(string text)
@@ -51,24 +56,27 @@ namespace Digital_Conscience
             List<string> tabooWords = PullTabooWords();
             CultureInfo culture = new CultureInfo("en-US", false);
 
-            bool flag = false;
-
             foreach(string phrase in tabooWords)
             {
                 if (culture.CompareInfo.IndexOf(text, phrase, CompareOptions.IgnoreCase) >= 0)
-                    flag = true;
+                    return true;
             }
-
-            return flag;
+            return false;
         }
 
         public void TabooDialog()
         {
-            var tabooDlg = MessageBox.Show("Your message contained words that are common with those that are considered hostile or hateful.\nAre you sure you want to post this?", "Warning Message", MessageBoxButtons.YesNo);
+            var tabooDlg = MessageBox.Show("These comments may be seen as harrassment.\n\n" +
+                "Engaging in these activities may result in the following:\n" +
+                "Negative Psychological Effects\n" +
+                "Depression\n" +
+                "Public Shaming\n" +
+                "Criminal Charges\n\n" +
+                "Are you sure you want to post this?", "Warning Message", MessageBoxButtons.YesNo);
             if (tabooDlg == System.Windows.Forms.DialogResult.Yes)
             {
                 var messageStatusDlg = MessageBox.Show("Succesfully Posted!","Message Status", MessageBoxButtons.OK);
-                this.Close();
+                addToFeed(messageText.Text);
             }
         }
 
